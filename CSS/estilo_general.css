@@ -59,7 +59,7 @@ a {
 }
 
 ul li,a {
-    color: #076acd;
+    color: #0E4071;
 }
 
 ul li {
@@ -172,7 +172,7 @@ main {
 @media(max-width:619px) {
     ul {
         position: absolute;
-        right: 0;
+        right: -100%;
         top: 31px;
         width: 300px;
         background-color: #ccc;
