@@ -6,28 +6,8 @@
         <title>DropShop Chile</title>
         <meta name="description" content="Hola">
 
-        <link rel="preload" href="CSS/index.css" as="style" type="text/css">
-        <link rel="preload" href="CSS/estilo_general.css" as="style" type="text/css">
-        
-        <script>
-            window.onload = function() {
-                // Crear el elemento <link> para cargar el primer archivo CSS (index.css)
-                var link1 = document.createElement("link");
-                link1.rel = "stylesheet";
-                link1.href = "CSS/index.css"; // Ruta al archivo index.css
-                link1.type = "text/css";
-                
-                // Crear el elemento <link> para cargar el segundo archivo CSS (estilo_general.css)
-                var link2 = document.createElement("link");
-                link2.rel = "stylesheet";
-                link2.href = "CSS/estilo_general.css"; // Ruta al archivo estilo_general.css
-                link2.type = "text/css";
-                
-                // Agregar ambos <link> al <head> del documento
-                document.head.appendChild(link1);
-                document.head.appendChild(link2);
-            }
-        </script>
+        <link rel="stylesheet" href="CSS/index.css" as="style" type="text/css">
+        <link rel="stylesheet" href="CSS/estilo_general.css" as="style" type="text/css">                
     </head>
 
     <body>        
