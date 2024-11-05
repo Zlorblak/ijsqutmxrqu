@@ -3,10 +3,87 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>DropShop Chile</title>        
+        <title>DropShop Chile</title>
+        <meta name="description" content="Hola">
+
+        <link rel="stylesheet" href="CSS/estilo_general.css" type="text/css">
+        <link rel="stylesheet" href="CSS/index.css" type="text/css">
     </head>
 
-    <body>
-        <h1>Bienvenido a DropShop Chile</h1>
+    <body>        
+        <header>
+            <h1>Todo lo que necesitas, en un solo lugar</h1>
+            <p>Productos variados con envíos gratuitos en la Región Metropolitana y opciones para todo Chile</p>
+        </header>
+
+        <nav>
+            <a href="/" title="Volver al inicio">
+                <picture>
+                    <source srcset="Icons/Logo.webp">
+                    <img src="Icons/Logo.png" width="160" height="160" alt="DropShop Chile">
+                </picture>
+            </a>
+
+            <ul>
+                <li class="Icons-Menu">
+                    <img src="Icons/menu.svg" width="30" height="30" alt="Logo">
+                    <h2>Menú</h2>
+
+                    <button id="Close">
+                        <img src="Icons/close.svg" width="30" height="30" alt="Cerrar menú">
+                    </button>
+                </li>
+
+                <li class="Search">
+                    <div class="Options">
+                        <img src="Icons/lupa.svg" width="25" height="25" alt="Icono">
+                        <input type="text" placeholder="Buscar producto..." id="Input" title="Buscar producto...">
+                        <button id="Buscar">Buscar</button>
+                    </div>
+
+                    <button id="Close-1" title="Cerrar buscador">
+                        <img src="Icons/close.svg" width="26" height="26" alt="Cerrar buscador">
+                    </button>
+                </li>
+                <li><a href="/" title="Volver al inicio">Inicio</a></li>
+                <li class="SubMenu">Categoría
+                    <ul>
+                        <li><a href="Categoria/hogar.html" title="Explorar la categoría hogar">Hogar</a></li>
+                        <li><a href="Categoria/belleza.html" title="Explorar la categoría belleza">Belleza</a></li>
+                        <li><a href="Categoria/tecnologia.html" title="Explorar la categoría tecnología">Tecnología</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://api.whatsapp.com/send/?phone=56994184167">Contacto</a></li>
+            </ul>
+
+            <div class="Icons">
+                <button id="Lupa" title="Abrir buscador">
+                    <img src="Icons/lupa.svg" width="26" height="26" alt="Abrir buscador">
+                </button>
+
+                <a href="Carrito-de-compras.html" title="Carrito de compras">
+                    <picture>
+                        <source srcset="Icons/cart.webp" type="image/webp">
+                        <img src="Icons/cart.png" width="32" height="32" alt="Carrito de compras">
+                    </picture>
+
+                    <span id="Numero">0</span>
+                </a>
+
+                <button id="Menu" title="Abrir menú">
+                    <img src="Icons/menu.svg" width="26" height="26" alt="Abrir menú">
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <h2 id="h2">Nuestro Compromiso</h2>
+
+            <div class="container">
+                <p>
+                    En <strong>DropShop Chile</strong>, nos dedicamos a ofrecerte productos de <strong>calidad</strong>. Trabajamos con <strong>Blue Express</strong> para garantizar <strong>envíos rápidos y seguros</strong> a todo Chile. Nuestro compromiso incluye <strong>atención al cliente 24/7</strong>, una <strong>política de devoluciones</strong> que cubre productos defectuosos o que no son los deseados, y un enfoque en la sostenibilidad. Además, estamos siempre actualizando nuestra selección para ofrecerte lo mejor. Tu <strong>satisfacción</strong> es nuestra prioridad.
+                </p>
+            </div>
+        </main>
     </body>
 </html>

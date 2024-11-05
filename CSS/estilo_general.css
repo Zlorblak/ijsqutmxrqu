@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../Fonts/Montserrat-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../Fonts/Montserrat-Bold.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header,nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background-color: #2472CD;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 11;
+    font-size: 14px;
+
+}
+
+header h1 {
+    font-size: clamp(15px,4vw,20px);
+    margin: 5px 0;
+}
+
+nav {
+    top:78px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+
+ul li,a {
+    color: #076acd;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul li.SubMenu {
+    position: relative;
+}
+
+nav ul li.SubMenu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+nav ul li.SubMenu:hover ul,nav ul li.SubMenu:focus ul {
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border:0;
+    height: 29px;
+    width: 32px;
+}
+
+.Icons, nav ul .Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#Numero {
+    position: relative;
+    top: -24px;
+    right: 2px;
+}
+
+#Menu, ul li.Icons-Menu {
+    display: none;
+}
+
+nav ul .Search {
+    position: absolute;
+    background: #ccc;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    margin: 0;
+    z-index: 1;
+    transition: top 1s ease;
+}
+
+nav ul .Search .Options img {
+    position: absolute;
+    border-right: 1px solid black;
+    padding: 2px 5px;
+    border-radius: 0 10px 10px 0;
+    top: 13px;
+}
+
+nav ul .Search .Options input {
+    padding: 5px 0px 5px 37px;
+    border: 2px solid #979797;
+}
+
+nav ul .Search .Options input:focus {
+    border-width: 2px;
+    border-color: #007BFF;
+    outline: none;
+}
+
+nav ul .Search .Options button {
+    background-color: #004dff;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    height: 33px;
+    width: 65px;
+    border-radius: 0 0 10px 0;
+    padding: 0 4px;
+    position: relative;
+    right: 5px;
+    top: 1px;
+}
+
+nav ul .Search:hover, nav ul .Icons-Menu:hover {
+    background-color: #ccc;
+}
+
+main {
+    margin-top: 287px;
+}
+
+@media(max-width:619px) {
+    ul {
+        position: absolute;
+        right: 0;
+        top: 31px;
+        width: 300px;
+        background-color: #ccc;
+        z-index: 1;
+        transition: right 1s ease;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    nav ul li.SubMenu ul {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    nav ul li.Icons-Menu{
+        display: flex;
+        align-items: center;
+        color:black;
+        position: relative;
+    }
+
+    nav ul li.Icons-Menu h2 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-right: 140px;
+    }
+
+    nav ul .Search {
+        position: relative;
+    }
+
+    #Close-1 {
+        display: none;
+    }
+}
