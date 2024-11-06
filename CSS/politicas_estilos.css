@@ -21,6 +21,7 @@
 
 body {
     font-family:'Montserrat';
+    background-color: #f4f4f4;
 }
 
 header, nav {
@@ -35,7 +36,7 @@ header,nav,nav ul .submenu ul,nav ul .Search {
     left: 0;
 }
 
-header,nav ul .Search .Options button, article h3, footer, footer a {
+header,nav ul .Search .Options button, footer, footer a {
     color: white;
 }
 
@@ -51,7 +52,7 @@ header, footer {
     font-weight: bold;
 }
 
-header,#h2,article.One {
+header {
     text-align: center;
 }
 
@@ -60,7 +61,7 @@ header h1 {
     margin: 5px 0;
 }
 
-nav,nav .Icons,nav ul .Search, .Cateogria, footer {
+nav,nav .Icons,nav ul .Search,footer {
     display: flex;
 }
 
@@ -71,7 +72,7 @@ nav {
     z-index: 2;
 }
 
-nav,nav ul .Search,nav ul .Menu-Icon, .Cateogria {
+nav,nav ul .Search,nav ul .Menu-Icon {
     align-items: center;
 }
 
@@ -95,11 +96,11 @@ nav ul li:hover {
     background-color: #f0f0f0
 }
 
-nav ul .submenu, #Numero, nav ul .Search .Options button,article {
+nav ul .submenu, #Numero, nav ul .Search .Options button {
     position: relative;
 }
 
-nav ul .submenu ul,nav ul .Search,nav ul .Search .Options img,article h3 {
+nav ul .submenu ul,nav ul .Search,nav ul .Search .Options img {
     position: absolute;
 }
 
@@ -114,15 +115,12 @@ nav ul .submenu:hover ul, nav ul .submenu:focus ul {
     display: block;
 }
 
-button,hr {
-    border: 0;
-}
-
 button {
+    border: 0;
     background-color: transparent;
 }
 
-nav .Icons,nav ul .Search,.Cateogria {
+nav .Icons,nav ul .Search {
     gap: 30px;
 }
 
@@ -135,12 +133,12 @@ nav .Icons,nav ul .Search,.Cateogria {
     display: none;
 }
 
-nav ul .Search,nav ul .Search:hover, nav ul .Menu-Icon:hover, hr {
+nav ul .Search,nav ul .Search:hover, nav ul .Menu-Icon:hover {
     background-color: #ccc;
     cursor: default;
 }
 
-nav ul .Search,article {
+nav ul .Search {
     z-index: 1;
 }
 
@@ -150,7 +148,7 @@ nav ul .Search {
     transition: top 1s ease;
 }
 
-nav ul .Search,.Cateogria,footer {
+nav ul .Search,footer {
     justify-content: center;
 }
 
@@ -185,75 +183,27 @@ nav ul .Search .Options input:focus {
 }
 
 main {
-    margin: 287px 0 50px 0;
+    width: 80%;
+    margin: 287px auto 80px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     margin: 20px 0;
 }
 
-.Container {
-    width: 80%;
-}
-
-.Container,article.One p {
-    margin: 0 auto;
-}
-
 main p {
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
+    margin: 10px 0;
 }
 
-hr {
-    width: 94%;
-    margin: 20px auto;
-    height: 1px;
-}
-
-.Cateogria, footer {
+footer {
     flex-wrap: wrap;
-}
-
-article, article img {
-    border-radius: 10px;
-}
-
-article {
-    width: 250px;
-    height: 250px;
-    transition: transform 0.3s ease;
-}
-
-article img {
-    object-fit: cover;
-}
-
-article h3 {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    font-size: 28px;
-}
-
-article.Nicho:hover, article.Nicho:focus {
-    transform: scale(0.9);
-}
-
-article.One {
-    border: 1px solid #ccc;
-    padding: 18px 4px 16px 4px;
-}
-
-article.One h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-article.One p {
-    width: 95%;
 }
 
 footer {

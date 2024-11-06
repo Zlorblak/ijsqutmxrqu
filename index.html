@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>DropShop Chile</title>
-        <meta name="description" content="Hola">
-
-        <link rel="stylesheet" href="CSS/index.css" as="style" type="text/css">
-        <link rel="stylesheet" href="CSS/estilo_general.css" as="style" type="text/css">                
+        <link rel="stylesheet" href="CSS/index.css" type="text/css">
     </head>
 
-    <body>        
+    <body>
         <header>
             <h1>Todo lo que necesitas, en un solo lugar</h1>
             <p>Productos variados con envíos gratuitos en la Región Metropolitana y opciones para todo Chile</p>
@@ -18,18 +15,18 @@
 
         <nav>
             <a href="/" title="Volver al inicio">
-                <picture>
-                    <source srcset="Icons/Logo.webp">
+                <picture>                    
+                    <source srcset="Icons/Logo.webp" type="image/webp">
                     <img src="Icons/Logo.png" width="160" height="160" alt="DropShop Chile">
                 </picture>
             </a>
 
             <ul>
-                <li class="Icons-Menu">
-                    <img src="Icons/menu.svg" width="30" height="30" alt="Logo">
+                <li class="Menu-Icon">
+                    <img src="Icons/menu.svg" width="30" height="30" alt="Icono">
                     <h2>Menú</h2>
 
-                    <button id="Close">
+                    <button id="Close" title="Cerrar menú">
                         <img src="Icons/close.svg" width="30" height="30" alt="Cerrar menú">
                     </button>
                 </li>
@@ -37,23 +34,24 @@
                 <li class="Search">
                     <div class="Options">
                         <img src="Icons/lupa.svg" width="25" height="25" alt="Icono">
-                        <input type="text" placeholder="Buscar producto..." id="Input" title="Buscar producto...">
+                        <input type="text" placeholder="Buscar producto..." title="Buscar producto..." id="inputTEXT">
                         <button id="Buscar">Buscar</button>
                     </div>
 
-                    <button id="Close-1" title="Cerrar buscador">
-                        <img src="Icons/close.svg" width="26" height="26" alt="Cerrar buscador">
+                    <button id="Close-1">
+                        <img src="Icons/close.svg" width="30" height="30">
                     </button>
                 </li>
+
                 <li><a href="/" title="Volver al inicio">Inicio</a></li>
-                <li class="SubMenu">Categoría
+                <li class="submenu">Catálogo
                     <ul>
-                        <li><a href="Categoria/hogar.html" title="Explorar la categoría hogar">Hogar</a></li>
-                        <li><a href="Categoria/belleza.html" title="Explorar la categoría belleza">Belleza</a></li>
-                        <li><a href="Categoria/tecnologia.html" title="Explorar la categoría tecnología">Tecnología</a></li>
+                        <li><a href="Categoria/hogar.html" title="Explora la categoría hogar">Hogar</a></li>
+                        <li><a href="Categoria/belleza.html" title="Explora la categoría belleza">Belleza</a></li>
+                        <li><a href="Categoria/tecnologia.html" title="Explora la categoría tecnología">Tecnología</a></li>
                     </ul>
                 </li>
-                <li><a href="https://api.whatsapp.com/send/?phone=56994184167">Contacto</a></li>
+                <li><a href="https://wa.me/56994184167">Contacto</a></li>
             </ul>
 
             <div class="Icons">
@@ -67,23 +65,141 @@
                         <img src="Icons/cart.png" width="32" height="32" alt="Carrito de compras">
                     </picture>
 
-                    <span id="Numero">0</span>
+                    <span id="Numero"></span>
                 </a>
 
                 <button id="Menu" title="Abrir menú">
-                    <img src="Icons/menu.svg" width="26" height="26" alt="Abrir menú">
+                    <img src="Icons/menu.svg" width="30" height="30" alt="Abrir menú">
                 </button>
             </div>
         </nav>
 
-        <main>
+        <main>            
             <h2 id="h2">Nuestro Compromiso</h2>
+            <div class="Container">
+                <p>En <strong>DropShop Chile</strong>, nos dedicamos a ofrecerte productos de <strong>calidad</strong>. Trabajamos con <strong>Blue Express</strong> para garantizar <strong>envíos rápidos y seguros</strong> a todo Chile. Nuestro compromiso incluye <strong>atención al cliente 24/7</strong>, una <strong>política de devoluciones</strong> que cubre productos defectuosos o que no son los deseados, y un enfoque en la sostenibilidad. Además, estamos siempre actualizando nuestra selección para ofrecerte lo mejor. Tu <strong>satisfacción</strong> es nuestra prioridad.</p>
 
-            <div class="container">
-                <p>
-                    En <strong>DropShop Chile</strong>, nos dedicamos a ofrecerte productos de <strong>calidad</strong>. Trabajamos con <strong>Blue Express</strong> para garantizar <strong>envíos rápidos y seguros</strong> a todo Chile. Nuestro compromiso incluye <strong>atención al cliente 24/7</strong>, una <strong>política de devoluciones</strong> que cubre productos defectuosos o que no son los deseados, y un enfoque en la sostenibilidad. Además, estamos siempre actualizando nuestra selección para ofrecerte lo mejor. Tu <strong>satisfacción</strong> es nuestra prioridad.
-                </p>
+                <hr>
+
+                <h2>Explora nuestras categorías:</h2>
+
+                <div class="Cateogria">
+                    <a href="Categoria/hogar.html" title="Explora la categoría hogar">
+                        <article class="Nicho">
+                            <picture> 
+                                <source srcset="Icons/hogar.webp" type="image/webp">
+                                <img src="Icons/hogar.png" width="250" height="250" alt="Explora la categoría hogar">
+                            </picture>
+                            <h3>Hogar</h3>
+                        </article>
+                    </a>
+
+                    <a href="Categoria/belleza.html" title="Explora la categoría belleza">
+                        <article class="Nicho">
+                            <picture>
+                                <source srcset="Icons/belleza.webp" type="image/webp">
+                                <img src="Icons/belleza.png" width="250" height="250" alt="Explora la categoría belleza">
+                            </picture>
+                            <h3>Belleza</h3>
+                        </article>
+                    </a>
+
+                    <a href="Categoria/tecnologia.html" title="Explora la categoría tecnología">
+                        <article class="Nicho">
+                            <picture> 
+                                <source srcset="Icons/tecnologia.webp" type="image/webp">
+                                <img src="Icons/tecnologia.png" width="250" height="250" alt="Explora la categoría tecnología">
+                            </picture>
+                            <h3>Tecnología</h3>
+                        </article>
+                    </a>
+                </div>
+
+                <hr>
+
+                <div class="Cateogria">
+                    <picture>
+                        <source srcset="Icons/BlueExpress.webp" type="image/webp">
+                        <img src="Icons/BlueExpress.png" width="250" height="250" style="border:1px solid #ccc;" alt="Blue Express">
+                    </picture>
+
+                    <article>
+                        <h2 id="h2">Envíos rápidos y seguros</h2>
+                        <p>Todos nuestros envíos son realizados por <strong>Blue Express</strong>, una empresa líder en despacho y logística con cobertura en todo Chile.</p>
+                    </article>
+                </div>
+
+                <hr>
+
+                <div class="Cateogria">
+                    <article class="One">
+                        <picture>
+                            <source srcset="Icons/medal.webp" type="image/webp">
+                            <img src="Icons/medal.png" width="70" height="70" alt="Medalla">
+                        </picture>
+                        <h2>Calidad garantizada</h2>
+                        <p>Productos seleccionados con altos estándares de calidad.</p>
+                    </article>
+                    
+                    <article class="One">
+                        <picture>
+                            <source srcset="Icons/camion.webp" type="image/webp">
+                            <img src="Icons/camion.png" width="70" height="70" alt="Camion">
+                        </picture>
+
+                        <h2>Envíos rapidos</h2>
+                        <p>Recibe tu pedido en tiempo récord, donde sea que estés.</p>
+                    </article>
+
+                    <article class="One">
+                        <picture>
+                            <source srcset="Icons/client.webp" type="image/webp">
+                            <img src="Icons/client.png" width="70" height="70" alt="Cliente">
+                        </picture>
+
+                        <h2>Atención al cliente 24/7</h2>
+                        <p>Estamos aquí para ayudarte a cualquier hora, cualquier día.</p>
+                    </article>
+
+                    <article class="One">
+                        <picture>
+                            <source srcset="Icons/dolar.webp" type="image/webp">
+                            <img src="Icons/dolar.png" width="70" height="70" alt="Billete">
+                        </picture>
+
+                        <h2>Pago contra entrega</h2>
+                        <p>Compra segura, paga en casa cuando recibas tu producto.</p>
+                    </article>
+                </div>
             </div>
         </main>
+
+        <footer>
+            <section>
+                <h2>Contacto</h2>
+                <p>Atención al cliente 24/7</p>
+                <p>Correo: <a href="mailto:dropshopchileonline@gmail.com">dropshopchileonline@gmail.com</a></p>
+                <p>Número de contacto: <a href="https://api.whatsapp.com/send/?phone=56994184167&amp;text&amp;type=phone_number&amp;app_absent=0">+56 9 9418 4167</a></p>
+            </section>
+
+            <section>
+                <h2>Enlaces de interés</h2>
+                <p><a href="politica-de-envio.html">Política de envío</a></p>
+                <p><a href="politica-de-devolucion-y-rembolso.html">Política de devolución y rembolso</a></p>
+            </section>
+
+            <section>
+                <h2>Siguenos en</h2>
+                <a href="https://instagram.com/drop.shopchile" style="display: flex; align-items: center; border-bottom: 0;">
+                    <picture>
+                        <source srcset="Icons/instagram.webp" type="image/webp">
+                        <img src="Icons/instagram.png" width="60" height="60" style="object-fit: contain;" alt="Instagram">
+                    </picture>
+
+                    <p>@drop.shopchile</p>
+                </a>
+            </section>
+        </footer>
+        <script src="JS/function.js" defer=""></script>
     </body>
 </html>
